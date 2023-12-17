@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Summan av 3-siffrigt tal</title>
+        <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="assets/images/3135715.png"
+        />
+        <style>
+            body {
+                background: rgb(205, 205, 205);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid px-5 py-5" id="main-container">
+            <div class="container-fluid bg-white py-3 px-5">
+                <span class="fs-4">Välkommen</span>
+                <hr />
+                <div
+                    class="container-fluid d-flex flex-row justify-content-center align-items-end"
+                >
+                    <label for="" class="form-label" style="min-width: 120px"
+                        >Skriv tal:
+                    </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="utrakning-title-input-1"
+                        minlength="5"
+                        maxlength="50"
+                        placeholder="Ex: 142"
+                        style="margin-right: 5px"
+                    />
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="utrakning-title-input-2"
+                        minlength="5"
+                        maxlength="50"
+                        placeholder="Ex: 256"
+                        style="margin-left: 5px"
+                    />
+                    <button
+                        type="submit"
+                        style="min-width: 90px; margin-left: 30px"
+                        class="btn btn-primary"
+                        id="utrakning-add-btn"
+                    >
+                        Räkna &plus;
+                    </button>
+                </div>
+                <div class="container-fluid mt-3">
+                    <table class="table fs-6 fw-normal">
+                        <thead>
+                            <th>Summa</th>
+                            <th>Ta Bort</th>
+                        </thead>
+                        <tbody id="utrakning-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="/eel.js"></script>
+        <script src="jquery/jquery.js"></script>
+        <script src="bootstrap/bootstrap.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
